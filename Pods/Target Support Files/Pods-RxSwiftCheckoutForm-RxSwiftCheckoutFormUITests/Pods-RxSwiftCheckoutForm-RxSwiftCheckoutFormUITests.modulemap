@@ -1,0 +1,6 @@
+framework module Pods_RxSwiftCheckoutForm_RxSwiftCheckoutFormUITests {
+  umbrella header "Pods-RxSwiftCheckoutForm-RxSwiftCheckoutFormUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

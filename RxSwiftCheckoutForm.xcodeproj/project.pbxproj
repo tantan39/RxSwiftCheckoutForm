@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		79483E5F20FC50A52F17548F /* Pods_RxSwiftCheckoutFormTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC75F9F2048ACB28830DA75 /* Pods_RxSwiftCheckoutFormTests.framework */; };
 		A71A8F0126556AD900D6BCF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71A8F0026556AD900D6BCF0 /* AppDelegate.swift */; };
 		A71A8F0326556AD900D6BCF0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71A8F0226556AD900D6BCF0 /* SceneDelegate.swift */; };
 		A71A8F0526556AD900D6BCF0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71A8F0426556AD900D6BCF0 /* ViewController.swift */; };
@@ -14,7 +15,8 @@
 		A71A8F0A26556ADF00D6BCF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A71A8F0926556ADF00D6BCF0 /* Assets.xcassets */; };
 		A71A8F0D26556ADF00D6BCF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A71A8F0B26556ADF00D6BCF0 /* LaunchScreen.storyboard */; };
 		A71A8F1826556ADF00D6BCF0 /* RxSwiftCheckoutFormTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71A8F1726556ADF00D6BCF0 /* RxSwiftCheckoutFormTests.swift */; };
-		A71A8F2326556ADF00D6BCF0 /* RxSwiftCheckoutFormUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71A8F2226556ADF00D6BCF0 /* RxSwiftCheckoutFormUITests.swift */; };
+		A71A8F3426556D9500D6BCF0 /* CheckoutFormViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71A8F3326556D9500D6BCF0 /* CheckoutFormViewModelTests.swift */; };
+		C2B490D4EB94CA2C234671B0 /* Pods_RxSwiftCheckoutForm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E504DB458EC0100939D5D8B /* Pods_RxSwiftCheckoutForm.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,16 +27,17 @@
 			remoteGlobalIDString = A71A8EFC26556AD900D6BCF0;
 			remoteInfo = RxSwiftCheckoutForm;
 		};
-		A71A8F1F26556ADF00D6BCF0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A71A8EF526556AD900D6BCF0 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A71A8EFC26556AD900D6BCF0;
-			remoteInfo = RxSwiftCheckoutForm;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1AC75F9F2048ACB28830DA75 /* Pods_RxSwiftCheckoutFormTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwiftCheckoutFormTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		201D1DBBB8BEEC00C17F38A5 /* Pods-RxSwiftCheckoutForm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftCheckoutForm.debug.xcconfig"; path = "Target Support Files/Pods-RxSwiftCheckoutForm/Pods-RxSwiftCheckoutForm.debug.xcconfig"; sourceTree = "<group>"; };
+		2E504DB458EC0100939D5D8B /* Pods_RxSwiftCheckoutForm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwiftCheckoutForm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4EDD54872D1CE1D6A9872088 /* Pods-RxSwiftCheckoutForm-RxSwiftCheckoutFormUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftCheckoutForm-RxSwiftCheckoutFormUITests.release.xcconfig"; path = "Target Support Files/Pods-RxSwiftCheckoutForm-RxSwiftCheckoutFormUITests/Pods-RxSwiftCheckoutForm-RxSwiftCheckoutFormUITests.release.xcconfig"; sourceTree = "<group>"; };
+		576E76FF45CA79E6A25C2AC6 /* Pods-RxSwiftCheckoutFormTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftCheckoutFormTests.release.xcconfig"; path = "Target Support Files/Pods-RxSwiftCheckoutFormTests/Pods-RxSwiftCheckoutFormTests.release.xcconfig"; sourceTree = "<group>"; };
+		5C90FA2F1D0F640F575BA8DC /* Pods-RxSwiftCheckoutFormTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftCheckoutFormTests.debug.xcconfig"; path = "Target Support Files/Pods-RxSwiftCheckoutFormTests/Pods-RxSwiftCheckoutFormTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5F7CF9532DF1284413736C3D /* Pods_RxSwiftCheckoutForm_RxSwiftCheckoutFormUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwiftCheckoutForm_RxSwiftCheckoutFormUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FE253A33B5D08B2945D4A4B /* Pods-RxSwiftCheckoutForm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftCheckoutForm.release.xcconfig"; path = "Target Support Files/Pods-RxSwiftCheckoutForm/Pods-RxSwiftCheckoutForm.release.xcconfig"; sourceTree = "<group>"; };
 		A71A8EFD26556AD900D6BCF0 /* RxSwiftCheckoutForm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwiftCheckoutForm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A71A8F0026556AD900D6BCF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A71A8F0226556AD900D6BCF0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -46,9 +49,8 @@
 		A71A8F1326556ADF00D6BCF0 /* RxSwiftCheckoutFormTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxSwiftCheckoutFormTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A71A8F1726556ADF00D6BCF0 /* RxSwiftCheckoutFormTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftCheckoutFormTests.swift; sourceTree = "<group>"; };
 		A71A8F1926556ADF00D6BCF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A71A8F1E26556ADF00D6BCF0 /* RxSwiftCheckoutFormUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxSwiftCheckoutFormUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A71A8F2226556ADF00D6BCF0 /* RxSwiftCheckoutFormUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftCheckoutFormUITests.swift; sourceTree = "<group>"; };
-		A71A8F2426556ADF00D6BCF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A71A8F3326556D9500D6BCF0 /* CheckoutFormViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutFormViewModelTests.swift; sourceTree = "<group>"; };
+		E8831770152EE16D61710D0A /* Pods-RxSwiftCheckoutForm-RxSwiftCheckoutFormUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftCheckoutForm-RxSwiftCheckoutFormUITests.debug.xcconfig"; path = "Target Support Files/Pods-RxSwiftCheckoutForm-RxSwiftCheckoutFormUITests/Pods-RxSwiftCheckoutForm-RxSwiftCheckoutFormUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2B490D4EB94CA2C234671B0 /* Pods_RxSwiftCheckoutForm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,26 +66,44 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A71A8F1B26556ADF00D6BCF0 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				79483E5F20FC50A52F17548F /* Pods_RxSwiftCheckoutFormTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		201F82A931C2C6598BFC120F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				201D1DBBB8BEEC00C17F38A5 /* Pods-RxSwiftCheckoutForm.debug.xcconfig */,
+				7FE253A33B5D08B2945D4A4B /* Pods-RxSwiftCheckoutForm.release.xcconfig */,
+				E8831770152EE16D61710D0A /* Pods-RxSwiftCheckoutForm-RxSwiftCheckoutFormUITests.debug.xcconfig */,
+				4EDD54872D1CE1D6A9872088 /* Pods-RxSwiftCheckoutForm-RxSwiftCheckoutFormUITests.release.xcconfig */,
+				5C90FA2F1D0F640F575BA8DC /* Pods-RxSwiftCheckoutFormTests.debug.xcconfig */,
+				576E76FF45CA79E6A25C2AC6 /* Pods-RxSwiftCheckoutFormTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		94CA26BE3DAB2601657189B2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2E504DB458EC0100939D5D8B /* Pods_RxSwiftCheckoutForm.framework */,
+				5F7CF9532DF1284413736C3D /* Pods_RxSwiftCheckoutForm_RxSwiftCheckoutFormUITests.framework */,
+				1AC75F9F2048ACB28830DA75 /* Pods_RxSwiftCheckoutFormTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A71A8EF426556AD900D6BCF0 = {
 			isa = PBXGroup;
 			children = (
 				A71A8EFF26556AD900D6BCF0 /* RxSwiftCheckoutForm */,
 				A71A8F1626556ADF00D6BCF0 /* RxSwiftCheckoutFormTests */,
-				A71A8F2126556ADF00D6BCF0 /* RxSwiftCheckoutFormUITests */,
 				A71A8EFE26556AD900D6BCF0 /* Products */,
+				201F82A931C2C6598BFC120F /* Pods */,
+				94CA26BE3DAB2601657189B2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -91,7 +112,6 @@
 			children = (
 				A71A8EFD26556AD900D6BCF0 /* RxSwiftCheckoutForm.app */,
 				A71A8F1326556ADF00D6BCF0 /* RxSwiftCheckoutFormTests.xctest */,
-				A71A8F1E26556ADF00D6BCF0 /* RxSwiftCheckoutFormUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -114,18 +134,10 @@
 			isa = PBXGroup;
 			children = (
 				A71A8F1726556ADF00D6BCF0 /* RxSwiftCheckoutFormTests.swift */,
+				A71A8F3326556D9500D6BCF0 /* CheckoutFormViewModelTests.swift */,
 				A71A8F1926556ADF00D6BCF0 /* Info.plist */,
 			);
 			path = RxSwiftCheckoutFormTests;
-			sourceTree = "<group>";
-		};
-		A71A8F2126556ADF00D6BCF0 /* RxSwiftCheckoutFormUITests */ = {
-			isa = PBXGroup;
-			children = (
-				A71A8F2226556ADF00D6BCF0 /* RxSwiftCheckoutFormUITests.swift */,
-				A71A8F2426556ADF00D6BCF0 /* Info.plist */,
-			);
-			path = RxSwiftCheckoutFormUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,9 +147,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A71A8F2726556ADF00D6BCF0 /* Build configuration list for PBXNativeTarget "RxSwiftCheckoutForm" */;
 			buildPhases = (
+				63ECF618D61B54E1361422C1 /* [CP] Check Pods Manifest.lock */,
 				A71A8EF926556AD900D6BCF0 /* Sources */,
 				A71A8EFA26556AD900D6BCF0 /* Frameworks */,
 				A71A8EFB26556AD900D6BCF0 /* Resources */,
+				5FAD0BC64B000D827B4BAB2D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +166,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A71A8F2A26556ADF00D6BCF0 /* Build configuration list for PBXNativeTarget "RxSwiftCheckoutFormTests" */;
 			buildPhases = (
+				8F2B1FBB2C3673D2AF7BF80D /* [CP] Check Pods Manifest.lock */,
 				A71A8F0F26556ADF00D6BCF0 /* Sources */,
 				A71A8F1026556ADF00D6BCF0 /* Frameworks */,
 				A71A8F1126556ADF00D6BCF0 /* Resources */,
@@ -166,24 +181,6 @@
 			productReference = A71A8F1326556ADF00D6BCF0 /* RxSwiftCheckoutFormTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		A71A8F1D26556ADF00D6BCF0 /* RxSwiftCheckoutFormUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A71A8F2D26556ADF00D6BCF0 /* Build configuration list for PBXNativeTarget "RxSwiftCheckoutFormUITests" */;
-			buildPhases = (
-				A71A8F1A26556ADF00D6BCF0 /* Sources */,
-				A71A8F1B26556ADF00D6BCF0 /* Frameworks */,
-				A71A8F1C26556ADF00D6BCF0 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A71A8F2026556ADF00D6BCF0 /* PBXTargetDependency */,
-			);
-			name = RxSwiftCheckoutFormUITests;
-			productName = RxSwiftCheckoutFormUITests;
-			productReference = A71A8F1E26556ADF00D6BCF0 /* RxSwiftCheckoutFormUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -197,10 +194,6 @@
 						CreatedOnToolsVersion = 12.0.1;
 					};
 					A71A8F1226556ADF00D6BCF0 = {
-						CreatedOnToolsVersion = 12.0.1;
-						TestTargetID = A71A8EFC26556AD900D6BCF0;
-					};
-					A71A8F1D26556ADF00D6BCF0 = {
 						CreatedOnToolsVersion = 12.0.1;
 						TestTargetID = A71A8EFC26556AD900D6BCF0;
 					};
@@ -221,7 +214,6 @@
 			targets = (
 				A71A8EFC26556AD900D6BCF0 /* RxSwiftCheckoutForm */,
 				A71A8F1226556ADF00D6BCF0 /* RxSwiftCheckoutFormTests */,
-				A71A8F1D26556ADF00D6BCF0 /* RxSwiftCheckoutFormUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -244,14 +236,71 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A71A8F1C26556ADF00D6BCF0 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5FAD0BC64B000D827B4BAB2D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RxSwiftCheckoutForm/Pods-RxSwiftCheckoutForm-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RxSwiftCheckoutForm/Pods-RxSwiftCheckoutForm-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
 			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RxSwiftCheckoutForm/Pods-RxSwiftCheckoutForm-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
-/* End PBXResourcesBuildPhase section */
+		63ECF618D61B54E1361422C1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RxSwiftCheckoutForm-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F2B1FBB2C3673D2AF7BF80D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RxSwiftCheckoutFormTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A71A8EF926556AD900D6BCF0 /* Sources */ = {
@@ -268,15 +317,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A71A8F3426556D9500D6BCF0 /* CheckoutFormViewModelTests.swift in Sources */,
 				A71A8F1826556ADF00D6BCF0 /* RxSwiftCheckoutFormTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A71A8F1A26556ADF00D6BCF0 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A71A8F2326556ADF00D6BCF0 /* RxSwiftCheckoutFormUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,11 +329,6 @@
 			isa = PBXTargetDependency;
 			target = A71A8EFC26556AD900D6BCF0 /* RxSwiftCheckoutForm */;
 			targetProxy = A71A8F1426556ADF00D6BCF0 /* PBXContainerItemProxy */;
-		};
-		A71A8F2026556ADF00D6BCF0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A71A8EFC26556AD900D6BCF0 /* RxSwiftCheckoutForm */;
-			targetProxy = A71A8F1F26556ADF00D6BCF0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -433,6 +470,7 @@
 		};
 		A71A8F2826556ADF00D6BCF0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 201D1DBBB8BEEC00C17F38A5 /* Pods-RxSwiftCheckoutForm.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -451,6 +489,7 @@
 		};
 		A71A8F2926556ADF00D6BCF0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FE253A33B5D08B2945D4A4B /* Pods-RxSwiftCheckoutForm.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -469,6 +508,7 @@
 		};
 		A71A8F2B26556ADF00D6BCF0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C90FA2F1D0F640F575BA8DC /* Pods-RxSwiftCheckoutFormTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -490,6 +530,7 @@
 		};
 		A71A8F2C26556ADF00D6BCF0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 576E76FF45CA79E6A25C2AC6 /* Pods-RxSwiftCheckoutFormTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -506,44 +547,6 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RxSwiftCheckoutForm.app/RxSwiftCheckoutForm";
-			};
-			name = Release;
-		};
-		A71A8F2E26556ADF00D6BCF0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = RxSwiftCheckoutFormUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.tantt.unittest.RxSwiftCheckoutFormUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = RxSwiftCheckoutForm;
-			};
-			name = Debug;
-		};
-		A71A8F2F26556ADF00D6BCF0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = RxSwiftCheckoutFormUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.tantt.unittest.RxSwiftCheckoutFormUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = RxSwiftCheckoutForm;
 			};
 			name = Release;
 		};
@@ -573,15 +576,6 @@
 			buildConfigurations = (
 				A71A8F2B26556ADF00D6BCF0 /* Debug */,
 				A71A8F2C26556ADF00D6BCF0 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A71A8F2D26556ADF00D6BCF0 /* Build configuration list for PBXNativeTarget "RxSwiftCheckoutFormUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A71A8F2E26556ADF00D6BCF0 /* Debug */,
-				A71A8F2F26556ADF00D6BCF0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

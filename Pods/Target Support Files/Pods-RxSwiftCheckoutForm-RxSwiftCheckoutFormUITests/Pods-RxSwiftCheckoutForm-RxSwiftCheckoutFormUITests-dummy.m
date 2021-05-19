@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_RxSwiftCheckoutForm_RxSwiftCheckoutFormUITests : NSObject
+@end
+@implementation PodsDummy_Pods_RxSwiftCheckoutForm_RxSwiftCheckoutFormUITests
+@end
