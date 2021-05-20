@@ -16,6 +16,15 @@
 		A71A8F0D26556ADF00D6BCF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A71A8F0B26556ADF00D6BCF0 /* LaunchScreen.storyboard */; };
 		A71A8F1826556ADF00D6BCF0 /* RxSwiftCheckoutFormTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71A8F1726556ADF00D6BCF0 /* RxSwiftCheckoutFormTests.swift */; };
 		A71A8F3426556D9500D6BCF0 /* CheckoutFormViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71A8F3326556D9500D6BCF0 /* CheckoutFormViewModelTests.swift */; };
+		A71A8F54265604E100D6BCF0 /* CheckoutFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71A8F53265604E000D6BCF0 /* CheckoutFormViewModel.swift */; };
+		A71A8F58265605E800D6BCF0 /* CheckoutFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71A8F57265605E800D6BCF0 /* CheckoutFormViewController.swift */; };
+		A71A8F5C26560B5400D6BCF0 /* FieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71A8F5B26560B5400D6BCF0 /* FieldCell.swift */; };
+		A71A8F60265697BD00D6BCF0 /* FieldViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71A8F5F265697BD00D6BCF0 /* FieldViewModel.swift */; };
+		A71A8F642656984000D6BCF0 /* SuggestionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71A8F632656984000D6BCF0 /* SuggestionViewModel.swift */; };
+		A71A8F682656989D00D6BCF0 /* CellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71A8F672656989D00D6BCF0 /* CellViewModel.swift */; };
+		A71A8F6C265698E500D6BCF0 /* Suggestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71A8F6B265698E500D6BCF0 /* Suggestion.swift */; };
+		A71A8F70265699B100D6BCF0 /* SuggestionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71A8F6F265699B100D6BCF0 /* SuggestionService.swift */; };
+		A71A8F7626569A6C00D6BCF0 /* RandomSuggestionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71A8F7526569A6C00D6BCF0 /* RandomSuggestionService.swift */; };
 		C2B490D4EB94CA2C234671B0 /* Pods_RxSwiftCheckoutForm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E504DB458EC0100939D5D8B /* Pods_RxSwiftCheckoutForm.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +59,15 @@
 		A71A8F1726556ADF00D6BCF0 /* RxSwiftCheckoutFormTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftCheckoutFormTests.swift; sourceTree = "<group>"; };
 		A71A8F1926556ADF00D6BCF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A71A8F3326556D9500D6BCF0 /* CheckoutFormViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutFormViewModelTests.swift; sourceTree = "<group>"; };
+		A71A8F53265604E000D6BCF0 /* CheckoutFormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutFormViewModel.swift; sourceTree = "<group>"; };
+		A71A8F57265605E800D6BCF0 /* CheckoutFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutFormViewController.swift; sourceTree = "<group>"; };
+		A71A8F5B26560B5400D6BCF0 /* FieldCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldCell.swift; sourceTree = "<group>"; };
+		A71A8F5F265697BD00D6BCF0 /* FieldViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldViewModel.swift; sourceTree = "<group>"; };
+		A71A8F632656984000D6BCF0 /* SuggestionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestionViewModel.swift; sourceTree = "<group>"; };
+		A71A8F672656989D00D6BCF0 /* CellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellViewModel.swift; sourceTree = "<group>"; };
+		A71A8F6B265698E500D6BCF0 /* Suggestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Suggestion.swift; sourceTree = "<group>"; };
+		A71A8F6F265699B100D6BCF0 /* SuggestionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestionService.swift; sourceTree = "<group>"; };
+		A71A8F7526569A6C00D6BCF0 /* RandomSuggestionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomSuggestionService.swift; sourceTree = "<group>"; };
 		E8831770152EE16D61710D0A /* Pods-RxSwiftCheckoutForm-RxSwiftCheckoutFormUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftCheckoutForm-RxSwiftCheckoutFormUITests.debug.xcconfig"; path = "Target Support Files/Pods-RxSwiftCheckoutForm-RxSwiftCheckoutFormUITests/Pods-RxSwiftCheckoutForm-RxSwiftCheckoutFormUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -154,6 +172,8 @@
 		A71A8F4C265570B300D6BCF0 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				A71A8F6B265698E500D6BCF0 /* Suggestion.swift */,
+				A71A8F6F265699B100D6BCF0 /* SuggestionService.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -161,6 +181,7 @@
 		A71A8F4D265570B900D6BCF0 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				A71A8F7526569A6C00D6BCF0 /* RandomSuggestionService.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -177,6 +198,10 @@
 		A71A8F4F265570D100D6BCF0 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				A71A8F53265604E000D6BCF0 /* CheckoutFormViewModel.swift */,
+				A71A8F5F265697BD00D6BCF0 /* FieldViewModel.swift */,
+				A71A8F632656984000D6BCF0 /* SuggestionViewModel.swift */,
+				A71A8F672656989D00D6BCF0 /* CellViewModel.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -184,6 +209,8 @@
 		A71A8F50265570DC00D6BCF0 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				A71A8F57265605E800D6BCF0 /* CheckoutFormViewController.swift */,
+				A71A8F5B26560B5400D6BCF0 /* FieldCell.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -355,9 +382,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A71A8F642656984000D6BCF0 /* SuggestionViewModel.swift in Sources */,
+				A71A8F60265697BD00D6BCF0 /* FieldViewModel.swift in Sources */,
+				A71A8F7626569A6C00D6BCF0 /* RandomSuggestionService.swift in Sources */,
+				A71A8F5C26560B5400D6BCF0 /* FieldCell.swift in Sources */,
+				A71A8F54265604E100D6BCF0 /* CheckoutFormViewModel.swift in Sources */,
+				A71A8F682656989D00D6BCF0 /* CellViewModel.swift in Sources */,
 				A71A8F0526556AD900D6BCF0 /* ViewController.swift in Sources */,
+				A71A8F70265699B100D6BCF0 /* SuggestionService.swift in Sources */,
 				A71A8F0126556AD900D6BCF0 /* AppDelegate.swift in Sources */,
 				A71A8F0326556AD900D6BCF0 /* SceneDelegate.swift in Sources */,
+				A71A8F58265605E800D6BCF0 /* CheckoutFormViewController.swift in Sources */,
+				A71A8F6C265698E500D6BCF0 /* Suggestion.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

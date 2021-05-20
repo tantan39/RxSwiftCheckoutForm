@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import RxCocoa
+import RxSwift
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -19,7 +21,15 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let scene = (scene as? UIWindowScene) else { return }
         
         window = UIWindow(windowScene: scene)
-        let viewController = ViewController()
+        
+        let viewModel = CheckoutFormViewModel(
+            iban: FieldViewModel(title: "IBAN"),
+            taxNumber: FieldViewModel(title: "Tax number"),
+            bankName: FieldViewModel(title: "Bank name"),
+            comment: FieldViewModel(title: "Comment"),
+            suggestionService: RandomSuggestionService())
+        
+        let viewController = CheckoutFormViewController(viewModel: viewModel)
         viewController.view.backgroundColor = .white
         window?.rootViewController = viewController
         

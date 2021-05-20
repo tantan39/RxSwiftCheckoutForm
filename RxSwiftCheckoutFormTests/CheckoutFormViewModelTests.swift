@@ -9,91 +9,7 @@ import XCTest
 import RxCocoa
 import RxSwift
 
-struct Suggestion {
-
-    let iban: String?
-    let taxNumber: String?
-    
-    internal init(iban: String?, taxNumber: String?) {
-        self.iban = iban
-        self.taxNumber = taxNumber
-    }
-}
-
-struct SuggestionRequest {
-    let query: String
-}
-
-protocol SuggestionService {
-    func perform(request: SuggestionRequest) -> Single<[Suggestion]>
-}
-
-struct CheckoutFormViewModel {
-    
-    private let iban: FieldViewModel
-    private let taxNumber: FieldViewModel
-    private let bankName: FieldViewModel
-    private let comment: FieldViewModel
-    private let service: SuggestionService
-    private let selectSuggestion = PublishRelay<Void>()
-    
-    internal init(iban: FieldViewModel, taxNumber: FieldViewModel, bankName: FieldViewModel, comment: FieldViewModel, suggestionService: SuggestionService) {
-        self.iban = iban
-        self.taxNumber = taxNumber
-        self.bankName = bankName
-        self.comment = comment
-        self.service = suggestionService
-    }
-    
-    var state: Observable<State> {
-        let allFields = State.fields([iban, taxNumber, bankName, comment])
-        
-        return Observable.merge(
-            focus(for: iban),
-            focus(for: taxNumber),
-
-            search(for: iban),
-            search(for: taxNumber),
-            selectSuggestion.map{ fields in
-                allFields
-            },
-            .just(allFields)
-        )
-    }
-    
-    private func focus(for field: FieldViewModel) -> Observable<State> {
-        return field.focus.map({ [field] in
-            .focus(field, [])
-        })
-    }
-    
-    private func search(for field: FieldViewModel) -> Observable<State> {
-        field.text
-            .skip(1)
-            .distinctUntilChanged()
-            .flatMap{ [service] query in
-                service.perform(request: .init(query: query)).asObservable()
-            }.map { [selectSuggestion] suggestions in
-                .focus(field, suggestions.map({ SuggestionViewModel($0, select: selectSuggestion) }))
-            }
-    }
-    
-}
-
-struct FieldViewModel: Equatable {
-    let title: String
-    let text = BehaviorRelay<String>(value: "")
-    let focus = PublishRelay<Void>()
-    
-    init(title: String = "") {
-        self.title = title
-    }
-
-    static func == (lhs: FieldViewModel, rhs: FieldViewModel) -> Bool {
-        lhs.title == rhs.title && lhs.text.value == rhs.text.value
-    }
-}
-
+@testable import RxSwiftCheckoutForm
 class FieldViewModelTests: XCTestCase {
     func test_isEqual_whenTitleAndTestMatches() {
         let f1 = FieldViewModel(title: "a title")
@@ -109,36 +25,7 @@ class FieldViewModelTests: XCTestCase {
     }
 }
 
-struct SuggestionViewModel: Equatable {
-    let text: String
-    let selection: PublishRelay<Void>
-    
-    init(_ suggetion: Suggestion) {
-        self.init(suggetion, select: PublishRelay<Void>())
-    }
-    
-    init(_ suggetion: Suggestion, select: PublishRelay<Void>) {
-        switch (suggetion.iban, suggetion.taxNumber) {
-        case let (.some(iban), .some(taxNumber)) :
-            self.text = "Iban: \(iban) | Tax number: \(taxNumber)"
-            
-        case let (.none, (.some(taxNumber))):
-            self.text = "Tax number: \(taxNumber)"
-            
-        case let ((.some(iban)), .none):
-            self.text = "Iban: \(iban)"
-        default:
-            self.text = ""
-        }
-        
-        self.selection = select
-    }
-    
-    static func == (lhs: SuggestionViewModel, rhs: SuggestionViewModel) -> Bool {
-        true
-    }
 
-}
 
 class SuggestionViewModelTests: XCTestCase {
     
@@ -164,13 +51,6 @@ class SuggestionViewModelTests: XCTestCase {
     }
     
     
-}
-
-
-enum State: Equatable {
-
-    case fields([FieldViewModel])
-    case focus(FieldViewModel, [SuggestionViewModel])
 }
 
 class CheckoutFormViewModelTests: XCTestCase {
@@ -352,14 +232,3 @@ class CheckoutFormViewModelTests: XCTestCase {
     }
 }
 
-private extension State {
-    var firstSuggestion: SuggestionViewModel? {
-        switch self {
-        case .focus(_, let suggestions):
-            return suggestions.first
-        default:
-            return nil
-        }
-    }
-    
-}
