@@ -121,6 +121,7 @@
 			children = (
 				A71A8F0026556AD900D6BCF0 /* AppDelegate.swift */,
 				A71A8F0226556AD900D6BCF0 /* SceneDelegate.swift */,
+				A71A8F4B265570A800D6BCF0 /* Checkout */,
 				A71A8F0426556AD900D6BCF0 /* ViewController.swift */,
 				A71A8F0626556AD900D6BCF0 /* Main.storyboard */,
 				A71A8F0926556ADF00D6BCF0 /* Assets.xcassets */,
@@ -138,6 +139,53 @@
 				A71A8F1926556ADF00D6BCF0 /* Info.plist */,
 			);
 			path = RxSwiftCheckoutFormTests;
+			sourceTree = "<group>";
+		};
+		A71A8F4B265570A800D6BCF0 /* Checkout */ = {
+			isa = PBXGroup;
+			children = (
+				A71A8F4D265570B900D6BCF0 /* API */,
+				A71A8F4C265570B300D6BCF0 /* Domain */,
+				A71A8F4E265570C200D6BCF0 /* Form */,
+			);
+			path = Checkout;
+			sourceTree = "<group>";
+		};
+		A71A8F4C265570B300D6BCF0 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		A71A8F4D265570B900D6BCF0 /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		A71A8F4E265570C200D6BCF0 /* Form */ = {
+			isa = PBXGroup;
+			children = (
+				A71A8F50265570DC00D6BCF0 /* UI */,
+				A71A8F4F265570D100D6BCF0 /* Presentation */,
+			);
+			path = Form;
+			sourceTree = "<group>";
+		};
+		A71A8F4F265570D100D6BCF0 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		A71A8F50265570DC00D6BCF0 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
